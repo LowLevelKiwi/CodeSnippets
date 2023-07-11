@@ -1,0 +1,32 @@
+
+/*this is only here to show the nav, this would be your own styling*/
+.full {
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.mobile {
+    width: 100%;
+    background-color: brown;
+
+    /*this display is needed so that the mobile doesnt show normally*/
+    display: none;
+}
+
+.dropdown {
+    background-color: blueviolet;
+    height: 100px;
+}
+
+
+/*this media tag should be set to the max width you want the nav to switch between*/
+@media (max-width: 768px) {
+    /*these are important to switch what navbar is shown*/
+    .full {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+}

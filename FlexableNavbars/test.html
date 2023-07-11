@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <!-- Ignore this shit -->
+    <link rel="stylesheet" href="style.css">
+<head>
+    <title>Test</title>
+</head>
+<body>
+    <!-- Ignore this shit -->
+    <div class="navBars">
+        <div class="full">
+            <!--put your pc nav bar here-->
+            Nav Shit
+        </div>
+        <div class="mobile">
+            <!--put your mobile nav bar here-->
+
+            <!--add the onclick="openDropdown()" to the thing that you want to open the dropdown-->
+            <!--You dont need this button its just for showing-->
+            <button class="dropbtn" onclick="openDropdown()">Open</button>
+        </div>
+        <div id="dropdown" class="dropdown" hidden="false">
+            <!--add all of the links for the dropdown here-->
+            Dropdown Shit
+        </div>
+    </div>
+
+</body>
+
+<script>
+    //open will keep track of if the dropdown is open or not
+    var open = false
+    
+    //this will open the dropdown
+    function openDropdown() {
+        //flips the value of open true -> false and false -> true
+        open = !open
+
+        //this shows and hides the drop down
+        document.getElementById("dropdown").hidden = open
+    }
+</script>
+
+
+</html>
